@@ -99,7 +99,7 @@
     justify-content: center;
 }
 
-.journey-btn {
+a {
     display: inline-block;
     color: #7FDBFF;
     text-decoration: none;
@@ -112,7 +112,7 @@
     letter-spacing: 1px;
 }
 
-.journey-btn:hover {
+a:hover {
     background: #7FDBFF;
     color: #001f3f;
     transform: translateY(-3px);
