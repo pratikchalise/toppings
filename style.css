@@ -1,0 +1,94 @@
+/*less gooo i want more toppingss*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #001f3f 0%, #0074D9 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .main-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid #7FDBFF;
+        }
+
+        .top-flex {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 50px;
+        }
+
+        .hero-title h1 {
+            font-size: clamp(2rem, 8vw, 5rem);
+            line-height: 0.8;
+            text-transform: uppercase;
+        }
+
+        .goal-machine {
+            background: #7FDBFF;
+            color: #001f3f;
+            padding: 20px;
+            border-radius: 50%;
+            width: 120px;
+            height: 120px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-weight: bold;
+            animation: pulse-glow 2s infinite;
+        }
+        /*animationssss my fav oneeeee */
+
+        @keyframes pulse-glow {
+            0% { transform: scale(1); box-shadow: 0 0 0 0px rgba(127, 219, 255, 0.7); }
+            70% { transform: scale(1.1); box-shadow: 0 0 0 20px rgba(127, 219, 255, 0); }
+            100% { transform: scale(1); box-shadow: 0 0 0 0px rgba(127, 219, 255, 0); }
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .stat-item {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            text-align: center;
+        }
+
+        .bio-area {
+            margin-top: 40px;
+            padding: 20px;
+            background: #001f3f;
+        }
+
+        @media (max-width: 750px) {
+            .top-flex {
+                flex-direction: column;
+                text-align: center;
+                gap: 30px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .main-container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
