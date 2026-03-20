@@ -92,3 +92,28 @@
                 margin: 10px;
             }
         }
+/*hewooo*/
+.link-wrapper {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.journey-btn {
+    display: inline-block;
+    color: #7FDBFF;
+    text-decoration: none;
+    font-weight: bold;
+    border: 2px solid #7FDBFF;
+    padding: 12px 25px;
+    border-radius: 5px;
+    transition: 0.2s ease-in-out;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.journey-btn:hover {
+    background: #7FDBFF;
+    color: #001f3f;
+    transform: translateY(-3px);
+}
