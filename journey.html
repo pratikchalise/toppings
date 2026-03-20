@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Journey | EH9</title>
+    <style>
+    /*ok so html's done and i am too lazy to make a css file so less do this here*/
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background: linear-gradient(135deg, #001f3f 0%, #0074D9 100%);
+            color: white;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .main-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 40px;
+            border-radius: 20px;
+            border: 2px solid #7FDBFF;
+        }
+
+        .nav-box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #7FDBFF;
+            padding-bottom: 20px;
+        }
+
+        .nav-box a {
+            color: #001f3f;
+            background: #7FDBFF;
+            padding: 10px 20px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .journey-list {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+            list-style-type: square;
+            padding-left: 20px;
+        }
+
+        .journey-list li {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 20px;
+            animation: slide-in 1s ease-out;
+        }
+
+        @keyframes slide-in {
+            0% { transform: translateX(-20px); opacity: 0; }
+            100% { transform: translateX(0); opacity: 1; }
+        }
+
+        .year {
+            color: #7FDBFF;
+            font-size: 1.5rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .club-name {
+            font-size: 1.2rem;
+            font-weight: bold;
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        .desc {
+            line-height: 1.5;
+        }
+
+        @media (max-width: 750px) {
+            .nav-box {
+                flex-direction: column;
+                gap: 15px;
+            }
+            .main-container {
+                padding: 15px;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+  <!-- well i didnt know i had to make 1+ webpages so ok less do this!-->
+  <div class="main-container">
+        <div class="nav-box">
+            <h1>Evolution of a Giant</h1>
+            <a href="index.html">← BACK TO HOME</a>
+        </div>
+
+        <ul class="journey-list">
+            <li>
+                <span class="year">2016 - 2017</span>
+                <span class="club-name">Bryne FK & Molde</span>
+                <p class="desc">My guy started in the Norwegian second tier before moving to Molde under Ole Gunnar Solskjaer. The world started noticing a kid who was way too big and way too fast.No one realized he had become the terminator.</p>
+            </li>
+            <li>
+                <span class="year">2019</span>
+                <span class="club-name">Red Bull Salzburg</span>
+                <p class="desc">Champions League debut. 8 goals in 6 group stage matches. This is where the "Terminator" nickname really took off.One of the coldest ones,'Terminator'</p>
+            </li>
+            <li>
+                <span class="year">2020 - 2022</span>
+                <span class="club-name">Borussia Dortmund</span>
+                <p class="desc">86 goals in 89 games. Absolute carnage in the Bundesliga. Yellow Wall loved him, defenders feared for their lives. The denfenders were starting to pray</p>
+            </li>
+            <li>
+                <span class="year">2022 - Present</span>
+                <span class="club-name">Manchester City</span>
+                <p class="desc">The final piece of Pep's puzzle. Treble winner, record breaker, and the undisputed king of the penalty box. ABSOLUTE TERMINATOR!!!</p>
+            </li>
+        </ul>
+    </div>
+</body>
+</html>
